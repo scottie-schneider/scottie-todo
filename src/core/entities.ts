@@ -37,7 +37,6 @@ const test: TodoItemTwo = {
   description: "string",
   dueDate: "string",
   title: "string",
-  test: ""
 }
 
 console.log(test)
