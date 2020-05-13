@@ -1,0 +1,23 @@
+{
+  "empty": "You haven't added any to do items yet!",
+  "header": [
+    {
+      "home": true,
+      "name": "Home",
+      "component": "overview",
+      "param": ""
+    }
+  ],
+  "footer": [
+    {
+      "name": "Contact",
+      "component": "contact",
+      "param": ""
+    },
+    {
+      "name": "About this repo",
+      "component": "about",
+      "param": ""
+    }
+  ]
+}
