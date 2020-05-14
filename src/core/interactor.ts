@@ -20,7 +20,9 @@ export class Interactor {
     param: "",
     home: false,
   }
-  todos: Array<TodoItem> = []
+  todos: Array<TodoItem> = [
+    { id: 1, description: "task1", dueDate: "12/21/21", title: "a title" },
+  ] // this should be initialized redux state
 
   constructor() {
     this.addTodoRequest = this.addTodoRequest.bind(this)
@@ -47,6 +49,7 @@ export class Interactor {
     Worker.addTodo(this.todos, request, this.addTodoResponse)
   }
   addTodoResponse(response: Todos): void {
+    // update redux state here?
     this.todos = response
     this.route = this.home
   }

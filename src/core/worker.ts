@@ -86,7 +86,7 @@ const initialState = {
   ],
 }
 
-export const reducer = (state = initialState, action) => {
+export const reducer = (state = initialState, action: any) => {
   if (action && action.type === "ADD TODO") {
     return {
       ...state,

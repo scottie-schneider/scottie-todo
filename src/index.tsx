@@ -7,6 +7,7 @@ import { App } from "./App"
 import { reducer } from "./core/worker"
 
 const store = createStore(reducer)
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
